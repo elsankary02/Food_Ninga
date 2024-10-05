@@ -55,7 +55,7 @@ class Profile extends StatelessWidget {
                       ),
                     ),
                     child: const MassageProfileWidget(
-                      image: 'assets/images/Photo Restaurant.png',
+                      image: 'assets/images/Photo_Restaurant.png',
                       titel: 'Detail product',
                     ),
                   ),
@@ -69,7 +69,7 @@ class Profile extends StatelessWidget {
                       ),
                     ),
                     child: const MassageProfileWidget(
-                      image: 'assets/images/Photo Menu.png',
+                      image: 'assets/images/Photo_Menu.png',
                       titel: 'Detailmenu',
                     ),
                   ),

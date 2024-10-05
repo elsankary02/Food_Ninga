@@ -65,7 +65,7 @@ class PaymentCartScreen extends StatelessWidget {
                           children: [
                             UnconstrainedBox(
                               child: SvgPicture.asset(
-                                  'assets/svg/Icon Location.svg'),
+                                  'assets/svg/Icon_Location.svg'),
                             ),
                             const SizedBox(width: 14),
                             Text(

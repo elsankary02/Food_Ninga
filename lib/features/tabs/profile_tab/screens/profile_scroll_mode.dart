@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:food_ninga/core/utils/text_manger.dart';
 
 class ProfileScrollMode extends StatelessWidget {
   const ProfileScrollMode({super.key});
@@ -18,7 +19,7 @@ class ProfileScrollMode extends StatelessWidget {
           Stack(
             children: [
               Image.asset(
-                'assets/images/Photo Profile.png',
+                'assets/images/Photo_Profile.png',
                 width: double.infinity,
                 fit: BoxFit.fill,
               ),
@@ -35,24 +36,52 @@ class ProfileScrollMode extends StatelessWidget {
                     ),
                     color: theme.scaffoldBackgroundColor,
                   ),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      const SizedBox(
-                        height: 20,
-                      ),
-                      Center(
-                        child: SvgPicture.asset('assets/svg/Scrooll Tools.svg'),
-                      ),
-                      const SizedBox(
-                        height: 20,
-                      ),                      const SizedBox(
-                        height: 20,
-                      ),                      const SizedBox(
-                        height: 20,
-                      ),
-
-                    ],
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 15),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        const SizedBox(
+                          height: 20,
+                        ),
+                        Center(
+                          child:
+                              SvgPicture.asset('assets/svg/Scrooll_Tools.svg'),
+                        ),
+                        const SizedBox(
+                          height: 32,
+                        ),
+                        Container(
+                          height: 34,
+                          width: 111,
+                          decoration: BoxDecoration(
+                            color: const Color.fromARGB(123, 255, 248, 232),
+                            borderRadius: BorderRadius.circular(18.5),
+                          ),
+                          child: Center(
+                            child: Text(
+                              'Member Gold',
+                              style: TextManger.textStyle12Medium
+                                  .copyWith(color: const Color(0xffFEAD1D)),
+                            ),
+                          ),
+                        ),
+                        const SizedBox(
+                          height: 32,
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              'Anam Wusono',
+                              style: TextManger.textstyle27Bold
+                                  .copyWith(color: theme.hintColor),
+                            ),
+                            SvgPicture.asset('assets/svg/edit_Icon.svg'),
+                          ],
+                        )
+                      ],
+                    ),
                   ),
                 ),
               ),

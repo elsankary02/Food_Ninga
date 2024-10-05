@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:food_ninga/core/utils/color_manger.dart';
@@ -58,7 +57,7 @@ class TextFieldSearchScreenWidget extends StatelessWidget {
                       ),
                       child: UnconstrainedBox(
                         child: SvgPicture.asset(
-                            'assets/svg/Icon Notifiaction.svg'),
+                            'assets/svg/Icon_Notifiaction.svg'),
                       ),
                     ),
                   ),
@@ -78,7 +77,7 @@ class TextFieldSearchScreenWidget extends StatelessWidget {
                   hintStyle: TextManger.textStyle12Medium.copyWith(
                       color: const Color.fromARGB(255, 247, 197, 166)),
                   prefixIcon: UnconstrainedBox(
-                    child: SvgPicture.asset('assets/svg/Icon Search.svg'),
+                    child: SvgPicture.asset('assets/svg/Icon_Search.svg'),
                   ),
                   filled: true,
                   fillColor: theme.focusColor,

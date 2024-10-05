@@ -26,7 +26,7 @@ class SetLocationScreen extends StatelessWidget {
                 Positioned(
                     top: 260,
                     left: 90,
-                    child: Image.asset('assets/images/Pin Radar.png')),
+                    child: Image.asset('assets/images/Pin_Radar.png')),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 25),
                   child: Column(
@@ -44,7 +44,7 @@ class SetLocationScreen extends StatelessWidget {
                           ),
                           prefixIcon: UnconstrainedBox(
                             child:
-                                SvgPicture.asset('assets/svg/Icon Search.svg'),
+                                SvgPicture.asset('assets/svg/Icon_Search.svg'),
                           ),
                           filled: true,
                           fillColor: theme.primaryColor,
@@ -79,7 +79,7 @@ class SetLocationScreen extends StatelessWidget {
                               children: [
                                 UnconstrainedBox(
                                   child: SvgPicture.asset(
-                                      'assets/svg/Icon Location.svg'),
+                                      'assets/svg/Icon_Location.svg'),
                                 ),
                                 const SizedBox(width: 14),
                                 Text(

@@ -24,7 +24,7 @@ class DetailMenuScreen extends StatelessWidget {
               Stack(
                 children: [
                   Image.asset(
-                    'assets/images/Photo Menu.png',
+                    'assets/images/Photo_Menu.png',
                     width: double.infinity,
                     fit: BoxFit.fill,
                   ),
@@ -53,7 +53,7 @@ class DetailMenuScreen extends StatelessWidget {
                                 ),
                                 Center(
                                   child: SvgPicture.asset(
-                                      'assets/svg/Scrooll Tools.svg'),
+                                      'assets/svg/Scrooll_Tools.svg'),
                                 ),
                                 const SizedBox(
                                   height: 20,
@@ -74,7 +74,7 @@ class DetailMenuScreen extends StatelessWidget {
                                     Row(
                                       children: [
                                         SvgPicture.asset(
-                                            'assets/svg/Icon Star.svg'),
+                                            'assets/svg/Icon_Star.svg'),
                                         const SizedBox(width: 10),
                                         const Text('4,8 Rating',
                                             style:
@@ -85,7 +85,7 @@ class DetailMenuScreen extends StatelessWidget {
                                     Row(
                                       children: [
                                         SvgPicture.asset(
-                                            'assets/svg/shopping-bag 1.svg'),
+                                            'assets/svg/shopping-bag_1.svg'),
                                         const SizedBox(width: 10),
                                         const Text(
                                           '2000+ Order',
@@ -151,14 +151,14 @@ class DetailMenuScreen extends StatelessWidget {
                                 ),
                                 const CardTextimonialsWidget(
                                   imageAssets:
-                                      'assets/images/Photo Profile screen.png',
+                                      'assets/images/Photo_Profile_screen.png',
                                 ),
                                 const SizedBox(
                                   height: 20,
                                 ),
                                 const CardTextimonialsWidget(
                                   imageAssets:
-                                      'assets/images/Photo Profile search.png',
+                                      'assets/images/Photo_Profile_search.png',
                                 ),
                                 const SizedBox(
                                   height: 20,
@@ -189,10 +189,11 @@ class DetailMenuScreen extends StatelessWidget {
                   color: ColorManger.kPrimaryColor,
                   borderRadius: BorderRadius.circular(15),
                 ),
-                child: const Center(
+                child: Center(
                   child: Text(
                     'Add To Chart',
-                    style: TextManger.textstyle15Bold,
+                    style: TextManger.textstyle15Bold
+                        .copyWith(color: ColorManger.kMaterialWhiteColor),
                   ),
                 ),
               ),

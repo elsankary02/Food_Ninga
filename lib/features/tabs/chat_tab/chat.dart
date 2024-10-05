@@ -41,7 +41,7 @@ class Chat extends StatelessWidget {
                       ),
                     ),
                     child: const MassageChatWidget(
-                      image: 'assets/images/Dianne Russell.png',
+                      image: 'assets/images/Dianne_Russell.png',
                       titel: 'Anamwp',
                     ),
                   ),

@@ -64,7 +64,7 @@ class _TrackOrderScreenState extends State<TrackOrderScreen> {
                           ),
                           child: Row(
                             children: [
-                              SvgPicture.asset('assets/svg/Icon clock.svg'),
+                              SvgPicture.asset('assets/svg/Icon_clock.svg'),
                               const SizedBox(
                                 width: 8,
                               ),
@@ -96,7 +96,7 @@ class _TrackOrderScreenState extends State<TrackOrderScreen> {
                 child: Stack(
                   children: [
                     Image.asset(
-                      'assets/images/Pattern Search.png',
+                      'assets/images/Pattern_Search.png',
                       fit: BoxFit.fill,
                       width: double.infinity,
                     ),
@@ -131,7 +131,7 @@ class _TrackOrderScreenState extends State<TrackOrderScreen> {
                             child: Row(
                               children: [
                                 Image.asset(
-                                    'assets/images/Photo Profile search.png'),
+                                    'assets/images/Photo_Profile_search.png'),
                                 const SizedBox(width: 20),
                                 Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
@@ -145,7 +145,7 @@ class _TrackOrderScreenState extends State<TrackOrderScreen> {
                                     Row(
                                       children: [
                                         SvgPicture.asset(
-                                            'assets/svg/Icon maps.svg'),
+                                            'assets/svg/Icon_maps.svg'),
                                         const SizedBox(width: 10),
                                         const Text(
                                           '25 minutes on the way',
@@ -220,7 +220,7 @@ class _TrackOrderScreenState extends State<TrackOrderScreen> {
                                     ),
                                     child: Center(
                                       child: SvgPicture.asset(
-                                          'assets/svg/Path (2).svg'),
+                                          'assets/svg/Path_down.svg'),
                                     ),
                                   ),
                                 ),

@@ -44,7 +44,7 @@ class Home extends StatelessWidget {
                     supTitel: '12 Mins',
                   ),
                   ResturantCardWidget(
-                    imageCard: 'assets/images/RestaurantCheef.png',
+                    imageCard: 'assets/images/Restaurant_Cheef.png',
                     titelText: 'Vegan Resto',
                     supTitel: '8 Mins',
                   ),
@@ -54,7 +54,7 @@ class Home extends StatelessWidget {
                     supTitel: '12 Mins',
                   ),
                   ResturantCardWidget(
-                    imageCard: 'assets/images/RestaurantCheef.png',
+                    imageCard: 'assets/images/Restaurant_Cheef.png',
                     titelText: 'Vegan Resto',
                     supTitel: '8 Mins',
                   ),
@@ -69,7 +69,7 @@ class Home extends StatelessWidget {
               height: 20,
             ),
             const PopularCardMenuWidget(
-              imageCard: 'assets/images/Green Noddle.png',
+              imageCard: 'assets/images/Green_Noddle.png',
               titelText: 'Green Noddle',
               supTitel: 'Noodle Home',
               price: r'$15',
@@ -78,7 +78,7 @@ class Home extends StatelessWidget {
               height: 20,
             ),
             const PopularCardMenuWidget(
-              imageCard: 'assets/images/Fruit Salad.png',
+              imageCard: 'assets/images/Fruit_Salad.png',
               titelText: 'Fruit Salad',
               supTitel: 'Wijie Resto',
               price: r'$5',
@@ -87,7 +87,7 @@ class Home extends StatelessWidget {
               height: 20,
             ),
             const PopularCardMenuWidget(
-              imageCard: 'assets/images/Herbal Pancake.png',
+              imageCard: 'assets/images/Herbal_Pancake.png',
               titelText: 'Herbal Pancake',
               supTitel: 'Warung Herbal',
               price: r'$7',

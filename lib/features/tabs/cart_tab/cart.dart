@@ -29,45 +29,58 @@ class Cart extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       const SizedBox(
-                        height: 25,
+                        height: 50,
                       ),
                       Text(
                         'Cart',
                         style: TextManger.textstyle25Bold
                             .copyWith(color: theme.hintColor),
                       ),
-                      const SizedBox(
-                        height: 35,
-                      ),
-                      const CartMenuWidget(
-                        image: 'assets/images/Photo Soup.png',
-                      ),
-                      const SizedBox(
-                        height: 20,
-                      ),
-                      const CartMenuWidget(
-                          image: 'assets/images/Photo Salad.png'),
-                      const SizedBox(
-                        height: 20,
-                      ),
-                      const CartMenuWidget(
-                          image: 'assets/images/Photo Shawirma.png'),
-                      const SizedBox(
-                        height: 20,
-                      ),
-                      const CartMenuWidget(
-                          image: 'assets/images/Photo Veg.png'),
-                      const SizedBox(
-                        height: 84,
-                      ),
                     ],
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(top: 150),
+                  child: SizedBox(
+                    height: 500,
+                    child: ListView(
+                      padding: const EdgeInsets.symmetric(horizontal: 20),
+                      physics: const BouncingScrollPhysics(),
+                      scrollDirection: Axis.vertical,
+                      children: const [
+                        CartMenuWidget(
+                          image: 'assets/images/Photo_Soup.png',
+                        ),
+                        SizedBox(
+                          height: 20,
+                        ),
+                        CartMenuWidget(image: 'assets/images/Photo_Salad.png'),
+                        SizedBox(
+                          height: 20,
+                        ),
+                        CartMenuWidget(
+                            image: 'assets/images/Photo_Shawirma.png'),
+                        SizedBox(
+                          height: 20,
+                        ),
+                        CartMenuWidget(image: 'assets/images/Photo_Veg.png'),
+                        SizedBox(
+                          height: 20,
+                        ),
+                        CartMenuWidget(
+                            image: 'assets/images/Photo_Shawirma.png'),
+                      ],
+                    ),
                   ),
                 ),
               ],
             ),
-            GestureDetector(
-              onTap: () => _displayButtomSheet(context),
-              child: const CustomButtonWidget(textButton: r'Go to Checkout $'),
+            Expanded(
+              child: GestureDetector(
+                onTap: () => _displayButtomSheet(context),
+                child:
+                    const CustomButtonWidget(textButton: r'Go to Checkout $'),
+              ),
             ),
           ],
         ),

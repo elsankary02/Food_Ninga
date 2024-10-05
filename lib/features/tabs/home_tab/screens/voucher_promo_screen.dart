@@ -18,7 +18,7 @@ class VoucherPromoScreen extends StatelessWidget {
               titelAppBarPage: 'Voucher Promo',
             ),
             CardOrdar(
-              image: 'assets/images/Girl Eat Image.png',
+              image: 'assets/images/Girl_Eat_Image.png',
               backgroundColor: ColorManger.kPrimaryColor,
               colorOrder: Color(0xff009C51),
               specialColor: ColorManger.kMaterialWhiteColor,
@@ -27,7 +27,7 @@ class VoucherPromoScreen extends StatelessWidget {
               height: 20,
             ),
             CardOrdar(
-              image: 'assets/images/Image Order.png',
+              image: 'assets/images/Image_Order.png',
               backgroundColor: Color(0xffE9F7BA),
               colorOrder: Color(0xff6B3A5B),
               specialColor: Color(0xff6B3A5B),

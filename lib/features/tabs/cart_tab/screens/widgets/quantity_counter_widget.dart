@@ -28,7 +28,7 @@ class _QuantityCounterWidgetState extends State<QuantityCounterWidget> {
               });
             }
           },
-          child: SvgPicture.asset('assets/svg/Icon Minus.svg'),
+          child: SvgPicture.asset('assets/svg/Icon_Minus.svg'),
         ),
         Padding(
           padding: const EdgeInsetsDirectional.symmetric(horizontal: 8),
@@ -46,7 +46,7 @@ class _QuantityCounterWidgetState extends State<QuantityCounterWidget> {
               });
             }
           },
-          child: SvgPicture.asset('assets/svg/Icon Plus.svg'),
+          child: SvgPicture.asset('assets/svg/Icon_Plus.svg'),
         ),
       ],
     );

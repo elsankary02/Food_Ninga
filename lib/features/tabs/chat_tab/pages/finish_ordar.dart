@@ -30,7 +30,7 @@ class FinishOrdar extends StatelessWidget {
                   child: Image.asset(
                     width: 161,
                     height: 161,
-                    'assets/images/Image Finish ordar.png',
+                    'assets/images/Image_Finish_ordar.png',
                   ),
                 ),
               ],
@@ -70,19 +70,19 @@ class FinishOrdar extends StatelessWidget {
                   width: 23,
                 ),
                 UnconstrainedBox(
-                  child: SvgPicture.asset('assets/svg/Group 774.svg'),
+                  child: SvgPicture.asset('assets/svg/Group_774.svg'),
                 ),
                 const SizedBox(
                   width: 23,
                 ),
                 UnconstrainedBox(
-                  child: SvgPicture.asset('assets/svg/Star (1).svg'),
+                  child: SvgPicture.asset('assets/svg/Star_oppacty.svg'),
                 ),
                 const SizedBox(
                   width: 23,
                 ),
                 UnconstrainedBox(
-                  child: SvgPicture.asset('assets/svg/Star (1).svg'),
+                  child: SvgPicture.asset('assets/svg/Star_oppacty.svg'),
                 ),
               ],
             ),
@@ -96,7 +96,7 @@ class FinishOrdar extends StatelessWidget {
                   hintText: 'Leave feedback',
                   hintStyle: TextManger.textstyle14Regular,
                   prefixIcon: UnconstrainedBox(
-                    child: SvgPicture.asset('assets/svg/edit Icon.svg'),
+                    child: SvgPicture.asset('assets/svg/edit_Icon.svg'),
                   ),
                   filled: true,
                   fillColor: theme.primaryColor,

@@ -61,7 +61,7 @@ class PopularMenuScreen extends StatelessWidget {
             const SizedBox(
               width: double.infinity,
               child: PopularCardMenuWidget(
-                imageCard: 'assets/images/Herbal Pancake.png',
+                imageCard: 'assets/images/Herbal_Pancake.png',
                 titelText: 'Herbal Pancake',
                 supTitel: 'Warung Herbal',
                 price: r'$7',
@@ -73,7 +73,7 @@ class PopularMenuScreen extends StatelessWidget {
             const SizedBox(
               width: double.infinity,
               child: PopularCardMenuWidget(
-                imageCard: 'assets/images/Fruit Salad.png',
+                imageCard: 'assets/images/Fruit_Salad.png',
                 titelText: 'Fruit Salad',
                 supTitel: 'Wijie Resto',
                 price: r'$5',
@@ -85,7 +85,7 @@ class PopularMenuScreen extends StatelessWidget {
             const SizedBox(
               width: double.infinity,
               child: PopularCardMenuWidget(
-                imageCard: 'assets/images/Green Noddle.png',
+                imageCard: 'assets/images/Green_Noddle.png',
                 titelText: 'Green Noddle',
                 supTitel: 'Noodle Home',
                 price: r'$15',

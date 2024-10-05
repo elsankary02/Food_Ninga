@@ -50,7 +50,7 @@ class AppbarHomeScreen extends StatelessWidget {
                           ),
                           child: UnconstrainedBox(
                             child: SvgPicture.asset(
-                                'assets/svg/Icon Notifiaction.svg'),
+                                'assets/svg/Icon_Notifiaction.svg'),
                           ),
                         ),
                       ),
@@ -82,7 +82,7 @@ class AppbarHomeScreen extends StatelessWidget {
                             child: Row(
                               children: [
                                 SvgPicture.asset(
-                                  'assets/svg/Icon Search.svg',
+                                  'assets/svg/Icon_Search.svg',
                                 ),
                                 const SizedBox(
                                   width: 20,

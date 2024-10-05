@@ -54,7 +54,7 @@ class CahtDetailsAnamwpPage extends StatelessWidget {
                     child: Row(
                       children: [
                         Image.asset(
-                          'assets/images/Dianne Russell.png',
+                          'assets/images/Dianne_Russell.png',
                           width: 62,
                           height: 62,
                         ),
@@ -71,7 +71,7 @@ class CahtDetailsAnamwpPage extends StatelessWidget {
                             ),
                             Row(
                               children: [
-                                SvgPicture.asset('assets/svg/Ellipse 184.svg'),
+                                SvgPicture.asset('assets/svg/Ellipse_184.svg'),
                                 const SizedBox(
                                   width: 4,
                                 ),
@@ -92,7 +92,7 @@ class CahtDetailsAnamwpPage extends StatelessWidget {
                               builder: (context) => const CallRanging(),
                             ),
                           ),
-                          child: SvgPicture.asset('assets/svg/Call Logo.svg'),
+                          child: SvgPicture.asset('assets/svg/Call_Logo.svg'),
                         ),
                       ],
                     ),
@@ -158,7 +158,7 @@ class CahtDetailsAnamwpPage extends StatelessWidget {
                           style: TextManger.textstyle14Regular
                               .copyWith(color: theme.hintColor),
                         ),
-                        SvgPicture.asset('assets/svg/Icon Send.svg'),
+                        SvgPicture.asset('assets/svg/Icon_Send.svg'),
                       ],
                     ),
                   ),

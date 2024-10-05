@@ -15,7 +15,7 @@ class NotifiactionScreen extends StatelessWidget {
               titelAppBarPage: 'Notifiaction',
             ),
             NotifiactionCardWidget(
-              image: 'assets/svg/Success Icon.svg',
+              image: 'assets/svg/Success_Icon.svg',
               titel: 'Your order has been taken by\n the driver',
               subTitel: 'Recently',
             ),
@@ -23,7 +23,7 @@ class NotifiactionScreen extends StatelessWidget {
               height: 20,
             ),
             NotifiactionCardWidget(
-              image: 'assets/svg/Top Up Icon.svg',
+              image: 'assets/svg/Top_Up_Icon.svg',
               titel: r'Topup for $100 was successful',
               subTitel: '10.00 Am',
             ),
@@ -31,7 +31,7 @@ class NotifiactionScreen extends StatelessWidget {
               height: 20,
             ),
             NotifiactionCardWidget(
-              image: 'assets/svg/Cancel Icon.svg',
+              image: 'assets/svg/Cancel_Icon.svg',
               titel: 'Your order has been canceled',
               subTitel: '22 Juny 2021',
             ),

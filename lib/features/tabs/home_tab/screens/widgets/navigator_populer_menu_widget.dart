@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:food_ninga/core/utils/color_manger.dart';
 import 'package:food_ninga/core/utils/text_manger.dart';

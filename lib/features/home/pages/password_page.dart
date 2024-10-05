@@ -64,7 +64,7 @@ class _PasswordPageState extends State<PasswordPage> {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 14),
               child: TextField(
-                obscureText: isSelected ? false : true,
+                obscureText: isPassword ? false : true,
                 decoration: InputDecoration(
                   suffixIcon: GestureDetector(
                     onTap: () {

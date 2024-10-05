@@ -28,7 +28,7 @@ class _DetailproductScreenState extends State<DetailproductScreen> {
         children: [
           Stack(
             children: [
-              Image.asset('assets/images/Photo Restaurant.png'),
+              Image.asset('assets/images/Photo_Restaurant.png'),
               Padding(
                 padding: const EdgeInsets.only(top: 358),
                 child: Column(
@@ -54,7 +54,7 @@ class _DetailproductScreenState extends State<DetailproductScreen> {
                             ),
                             Center(
                               child: SvgPicture.asset(
-                                  'assets/svg/Scrooll Tools.svg'),
+                                  'assets/svg/Scrooll_Tools.svg'),
                             ),
                             const SizedBox(
                               height: 20,
@@ -75,7 +75,7 @@ class _DetailproductScreenState extends State<DetailproductScreen> {
                                 Row(
                                   children: [
                                     SvgPicture.asset(
-                                        'assets/svg/Icon map-pin.svg'),
+                                        'assets/svg/Icon_map_pin.svg'),
                                     const SizedBox(width: 10),
                                     const Text(
                                       '19 Km',
@@ -87,7 +87,7 @@ class _DetailproductScreenState extends State<DetailproductScreen> {
                                 Row(
                                   children: [
                                     SvgPicture.asset(
-                                        'assets/svg/Icon Star.svg'),
+                                        'assets/svg/Icon_Star.svg'),
                                     const SizedBox(width: 10),
                                     const Text('4,8 Rating',
                                         style: TextManger.textstyle14Regular),
@@ -130,8 +130,8 @@ class _DetailproductScreenState extends State<DetailproductScreen> {
                                 children: const [
                                   PopulerMenuProfileWidget(
                                     blurImage:
-                                        'assets/images/image opacity meat.png',
-                                    imageAssets: 'assets/images/image Meat.png',
+                                        'assets/images/image_opacity_meat.png',
+                                    imageAssets: 'assets/images/image_Meat.png',
                                     title: 'Spacy fresh crab',
                                     subTitle: r'12 $',
                                   ),
@@ -140,9 +140,9 @@ class _DetailproductScreenState extends State<DetailproductScreen> {
                                   ),
                                   PopulerMenuProfileWidget(
                                     blurImage:
-                                        'assets/images/image opacity pizza.png',
+                                        'assets/images/image_opacity_pizza.png',
                                     imageAssets:
-                                        'assets/images/image Pizza.png',
+                                        'assets/images/image_Pizza.png',
                                     title: 'Spacy fresh crab',
                                     subTitle: r'16 $',
                                   ),
@@ -151,8 +151,8 @@ class _DetailproductScreenState extends State<DetailproductScreen> {
                                   ),
                                   PopulerMenuProfileWidget(
                                     blurImage:
-                                        'assets/images/image opacity meat.png',
-                                    imageAssets: 'assets/images/image Meat.png',
+                                        'assets/images/image_opacity_meat.png',
+                                    imageAssets: 'assets/images/image_Meat.png',
                                     title: 'Spacy fresh crab',
                                     subTitle: r'12 $',
                                   ),
@@ -161,9 +161,9 @@ class _DetailproductScreenState extends State<DetailproductScreen> {
                                   ),
                                   PopulerMenuProfileWidget(
                                     blurImage:
-                                        'assets/images/image opacity pizza.png',
+                                        'assets/images/image_opacity_pizza.png',
                                     imageAssets:
-                                        'assets/images/image Pizza.png',
+                                        'assets/images/image_Pizza.png',
                                     title: 'Spacy fresh crab',
                                     subTitle: r'16 $',
                                   ),
@@ -182,14 +182,14 @@ class _DetailproductScreenState extends State<DetailproductScreen> {
                             ),
                             const CardTextimonialsWidget(
                               imageAssets:
-                                  'assets/images/Photo Profile screen.png',
+                                  'assets/images/Photo_Profile_screen.png',
                             ),
                             const SizedBox(
                               height: 20,
                             ),
                             const CardTextimonialsWidget(
                               imageAssets:
-                                  'assets/images/Photo Profile search.png',
+                                  'assets/images/Photo_Profile_search.png',
                             ),
                             const SizedBox(
                               height: 20,

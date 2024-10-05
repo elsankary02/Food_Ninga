@@ -16,7 +16,7 @@ class CheckoutOrder extends StatelessWidget {
       decoration: const BoxDecoration(
         image: DecorationImage(
           fit: BoxFit.fill,
-          image: AssetImage('assets/images/Buttom Sheet Pattern.png'),
+          image: AssetImage('assets/images/Buttom_Sheet_Pattern.png'),
         ),
       ),
       child: Column(

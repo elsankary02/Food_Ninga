@@ -31,7 +31,7 @@ class _CallCloseState extends State<CallClose> {
                   child: Image.asset(
                     width: 161,
                     height: 161,
-                    'assets/images/order Image.png',
+                    'assets/images/order_Image.png',
                   ),
                 ),
               ],
@@ -63,8 +63,8 @@ class _CallCloseState extends State<CallClose> {
                     });
                   },
                   child: SvgPicture.asset(isSelected
-                      ? 'assets/svg/Mute Icon.svg'
-                      : 'assets/svg/Speaker Icon.svg'),
+                      ? 'assets/svg/Mute_Icon.svg'
+                      : 'assets/svg/Speaker_Icon.svg'),
                 ),
                 const SizedBox(
                   width: 20,
@@ -75,7 +75,7 @@ class _CallCloseState extends State<CallClose> {
                       builder: (context) => const FinishOrdar(),
                     ),
                   ),
-                  child: SvgPicture.asset('assets/svg/Close Icon2.svg'),
+                  child: SvgPicture.asset('assets/svg/Close_Icon2.svg'),
                 ),
               ],
             ),

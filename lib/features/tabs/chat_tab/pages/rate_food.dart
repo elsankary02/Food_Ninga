@@ -27,7 +27,7 @@ class RateFood extends StatelessWidget {
                 ),
                 Padding(
                   padding: const EdgeInsets.only(top: 180, left: 110),
-                  child: Image.asset('assets/images/Rate Food Image.png'),
+                  child: Image.asset('assets/images/Rate_Food_Image.png'),
                 ),
               ],
             ),
@@ -66,19 +66,19 @@ class RateFood extends StatelessWidget {
                   width: 23,
                 ),
                 UnconstrainedBox(
-                  child: SvgPicture.asset('assets/svg/Group 774.svg'),
+                  child: SvgPicture.asset('assets/svg/Group_774.svg'),
                 ),
                 const SizedBox(
                   width: 23,
                 ),
                 UnconstrainedBox(
-                  child: SvgPicture.asset('assets/svg/Star (1).svg'),
+                  child: SvgPicture.asset('assets/svg/Star_oppacty.svg'),
                 ),
                 const SizedBox(
                   width: 23,
                 ),
                 UnconstrainedBox(
-                  child: SvgPicture.asset('assets/svg/Star (1).svg'),
+                  child: SvgPicture.asset('assets/svg/Star_oppacty.svg'),
                 ),
               ],
             ),
@@ -92,7 +92,7 @@ class RateFood extends StatelessWidget {
                   hintText: 'Leave feedback',
                   hintStyle: TextManger.textstyle14Regular,
                   prefixIcon: UnconstrainedBox(
-                    child: SvgPicture.asset('assets/svg/edit Icon.svg'),
+                    child: SvgPicture.asset('assets/svg/edit_Icon.svg'),
                   ),
                   filled: true,
                   fillColor: theme.primaryColor,

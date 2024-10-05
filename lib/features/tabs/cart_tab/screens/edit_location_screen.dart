@@ -41,7 +41,7 @@ class EditLocationScreen extends StatelessWidget {
                           children: [
                             UnconstrainedBox(
                               child: SvgPicture.asset(
-                                  'assets/svg/Icon Location.svg'),
+                                  'assets/svg/Icon_Location.svg'),
                             ),
                             const SizedBox(width: 14),
                             Text(
@@ -78,7 +78,7 @@ class EditLocationScreen extends StatelessWidget {
                           children: [
                             UnconstrainedBox(
                               child: SvgPicture.asset(
-                                  'assets/svg/Icon Location.svg'),
+                                  'assets/svg/Icon_Location.svg'),
                             ),
                             const SizedBox(width: 14),
                             Column(
