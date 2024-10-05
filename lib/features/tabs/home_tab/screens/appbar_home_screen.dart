@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:food_ninga/core/utils/color_manger.dart';
 import 'package:food_ninga/core/utils/text_manger.dart';
+import 'package:food_ninga/features/home/data/manger/cubit/change_theme_cubit.dart';
 import 'package:food_ninga/features/tabs/home_tab/screens/notifiaction_screen.dart';
 import 'package:food_ninga/features/tabs/home_tab/screens/search_screen.dart';
 
@@ -126,18 +128,31 @@ class ChangeTheme extends StatefulWidget {
 }
 
 class _ChangeThemeState extends State<ChangeTheme> {
+  bool themeChange = false;
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    return Container(
-      height: 50,
-      width: 50,
-      decoration: BoxDecoration(
-        color: theme.focusColor,
-        borderRadius: BorderRadius.circular(15),
-      ),
-      child: UnconstrainedBox(
-        child: SvgPicture.asset('assets/svg/Filter.svg'),
+    return GestureDetector(
+      onTap: () {
+        BlocProvider.of<ChangeThemeCubit>(context)
+            .setChangeTheme(value: themeChange);
+        setState(() {
+          themeChange = !themeChange;
+        });
+      },
+      child: Container(
+        height: 50,
+        width: 50,
+        decoration: BoxDecoration(
+          color: theme.focusColor,
+          borderRadius: BorderRadius.circular(15),
+        ),
+        child: Center(
+          child: Icon(
+            themeChange ? Icons.brightness_high : Icons.nightlight,
+            color: themeChange ? Colors.amber[700] : Colors.white,
+          ),
+        ),
       ),
     );
   }
