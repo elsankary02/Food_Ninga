@@ -68,7 +68,7 @@ class Cart extends StatelessWidget {
                           height: 20,
                         ),
                         CartMenuWidget(
-                            image: 'assets/images/Photo_Shawirma.png'),
+                            image: 'assets/images/Photo_Menu_profile.png'),
                       ],
                     ),
                   ),

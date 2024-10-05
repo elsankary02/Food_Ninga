@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:food_ninga/core/utils/color_manger.dart';
 import 'package:food_ninga/core/utils/text_manger.dart';
 
 class ProfileScrollMode extends StatelessWidget {
@@ -27,7 +28,7 @@ class ProfileScrollMode extends StatelessWidget {
                 padding: const EdgeInsets.only(top: 300),
                 child: Container(
                   padding: EdgeInsets.zero,
-                  height: 900,
+                  height: 1000,
                   width: double.infinity,
                   decoration: BoxDecoration(
                     borderRadius: const BorderRadius.only(
@@ -79,7 +80,68 @@ class ProfileScrollMode extends StatelessWidget {
                             ),
                             SvgPicture.asset('assets/svg/edit_Icon.svg'),
                           ],
-                        )
+                        ),
+                        const Text(
+                          'anamwp66@gmail.com',
+                          style: TextManger.textstyle14Regular,
+                        ),
+                        const SizedBox(
+                          height: 20,
+                        ),
+                        Container(
+                          padding: const EdgeInsets.only(
+                              left: 16, top: 13, bottom: 8),
+                          height: 64,
+                          width: double.infinity,
+                          decoration: BoxDecoration(
+                            color: ColorManger.kMaterialWhiteColor,
+                            borderRadius: BorderRadius.circular(22),
+                          ),
+                          child: Row(
+                            children: [
+                              SvgPicture.asset('assets/svg/Voucher_Icon.svg'),
+                              const SizedBox(
+                                width: 20,
+                              ),
+                              const Text(
+                                'You Have 3 Voucher',
+                                style: TextManger.textstyle15Medium,
+                              ),
+                            ],
+                          ),
+                        ),
+                        const SizedBox(
+                          height: 20,
+                        ),
+                        const Text(
+                          'Favorite',
+                          style: TextManger.textstyle15Bold,
+                        ),
+                        const SizedBox(
+                          height: 20,
+                        ),
+                        const CardProfile(
+                          image: 'assets/images/Photo_Soup.png',
+                        ),
+                        const SizedBox(
+                          height: 20,
+                        ),
+                        const CardProfile(
+                            image: 'assets/images/Photo_Salad.png'),
+                        const SizedBox(
+                          height: 20,
+                        ),
+                        const CardProfile(
+                            image: 'assets/images/Photo_Shawirma.png'),
+                        const SizedBox(
+                          height: 20,
+                        ),
+                        const CardProfile(image: 'assets/images/Photo_Veg.png'),
+                        const SizedBox(
+                          height: 20,
+                        ),
+                        const CardProfile(
+                            image: 'assets/images/Photo_Menu_profile.png'),
                       ],
                     ),
                   ),
@@ -87,6 +149,57 @@ class ProfileScrollMode extends StatelessWidget {
               ),
             ],
           ),
+        ],
+      ),
+    );
+  }
+}
+
+class CardProfile extends StatelessWidget {
+  final String image;
+  const CardProfile({
+    super.key,
+    required this.image,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 11),
+      width: double.infinity,
+      height: 103,
+      decoration: BoxDecoration(
+        color: theme.primaryColor,
+        borderRadius: BorderRadius.circular(15),
+      ),
+      child: Row(
+        children: [
+          Image.asset(image),
+          const SizedBox(
+            width: 20,
+          ),
+          Expanded(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  'Spacy fresh crab',
+                  style: TextManger.textstyle15Medium
+                      .copyWith(color: theme.hintColor),
+                ),
+                const Text(
+                  'Waroenk kita',
+                  style: TextManger.textstyle14Regular,
+                ),
+                const Text(
+                  r'$ 35',
+                  style: TextManger.textstyle19Bold,
+                ),
+              ],
+            ),
+          )
         ],
       ),
     );
