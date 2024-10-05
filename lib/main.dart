@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:food_ninga/core/utils/color_manger.dart';
 import 'package:food_ninga/features/splash/splash_view.dart';
 
-void main() {
+main() async {
   runApp(const FoodNinja());
 }
 
@@ -19,7 +19,7 @@ class FoodNinja extends StatelessWidget {
           focusColor: const Color(0xfffef5ec),
           primaryColor: ColorManger.kMaterialWhiteColor,
           hintColor: Colors.black),
-      themeMode: ThemeMode.light,
+      themeMode: ThemeMode.dark,
       darkTheme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: Colors.black,
         cardColor: Colors.grey,

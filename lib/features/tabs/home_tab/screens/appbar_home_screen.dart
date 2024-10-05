@@ -105,16 +105,7 @@ class AppbarHomeScreen extends StatelessWidget {
                       const SizedBox(
                         width: 10,
                       ),
-                      Container(
-                        height: 50,
-                        width: 50,
-                        decoration: BoxDecoration(
-                          color: theme.focusColor,
-                          borderRadius: BorderRadius.circular(15),
-                        ),
-                        child: UnconstrainedBox(
-                            child: SvgPicture.asset('assets/svg/Filter.svg')),
-                      ),
+                      const ChangeTheme(),
                     ],
                   ),
                 ),
@@ -122,6 +113,31 @@ class AppbarHomeScreen extends StatelessWidget {
             ),
           ),
         ],
+      ),
+    );
+  }
+}
+
+class ChangeTheme extends StatefulWidget {
+  const ChangeTheme({super.key});
+
+  @override
+  State<ChangeTheme> createState() => _ChangeThemeState();
+}
+
+class _ChangeThemeState extends State<ChangeTheme> {
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    return Container(
+      height: 50,
+      width: 50,
+      decoration: BoxDecoration(
+        color: theme.focusColor,
+        borderRadius: BorderRadius.circular(15),
+      ),
+      child: UnconstrainedBox(
+        child: SvgPicture.asset('assets/svg/Filter.svg'),
       ),
     );
   }
