@@ -23,7 +23,9 @@ class _SplashViewState extends State<SplashView> {
       const Duration(seconds: 2),
       () {
         Navigator.of(context).push(
-          MaterialPageRoute(builder: (context) => const OnboardingPage()),
+          MaterialPageRoute(
+            builder: (context) => const OnboardingPage(),
+          ),
         );
       },
     );
