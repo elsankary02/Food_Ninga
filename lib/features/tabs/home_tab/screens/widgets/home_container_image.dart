@@ -10,7 +10,6 @@ class HomeContainerImage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final theme = Theme.of(context);
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 25),
       child: Container(
@@ -39,11 +38,8 @@ class HomeContainerImage extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      'Special Deal For \nOctober',
-                      style: TextManger.textstyle17Bold
-                          .copyWith(color: theme.primaryColor),
-                    ),
+                    const Text('Special Deal For \nOctober',
+                        style: TextManger.textstyle17Bold),
                     const SizedBox(
                       height: 14,
                     ),

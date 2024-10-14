@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:food_ninga/core/utils/text_manger.dart';
 import 'package:food_ninga/core/utils/widget/custom_button_widget.dart';
 import 'package:food_ninga/features/home/pages/signup_success_notification.dart';
@@ -12,8 +13,14 @@ class SigninPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setSystemUIOverlayStyle(
+      const SystemUiOverlayStyle(
+        statusBarColor: Colors.transparent,
+      ),
+    );
     return Scaffold(
       body: ListView(
+        padding: EdgeInsets.zero,
         physics: const BouncingScrollPhysics(),
         children: [
           const LogoLoginWidget(

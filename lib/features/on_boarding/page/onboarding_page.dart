@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:food_ninga/core/utils/color_manger.dart';
 import 'package:food_ninga/core/utils/text_manger.dart';
 import 'package:food_ninga/features/home/pages/signup_page.dart';
-import 'package:food_ninga/features/on_boarding/model/onboarding_list_model_.dart';
+import 'package:food_ninga/features/on_boarding/model/onboarding_model.dart';
 
 class OnboardingPage extends StatefulWidget {
   const OnboardingPage({super.key});
@@ -22,6 +23,11 @@ class _OnboardingPageState extends State<OnboardingPage> {
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setSystemUIOverlayStyle(
+      const SystemUiOverlayStyle(
+        statusBarColor: Colors.transparent,
+      ),
+    );
     return Scaffold(
       body: Column(
         children: [

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:food_ninga/core/utils/color_manger.dart';
 import 'package:food_ninga/core/utils/text_manger.dart';
 import 'package:food_ninga/core/utils/widget/custom_button_widget.dart';
@@ -10,80 +11,81 @@ class Cart extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setSystemUIOverlayStyle(
+      const SystemUiOverlayStyle(
+        statusBarColor: Colors.transparent,
+      ),
+    );
     final theme = Theme.of(context);
 
     return Scaffold(
-      body: SafeArea(
-        child: Column(
-          children: [
-            Stack(
-              children: [
-                Image.asset(
-                  'assets/images/PatternTopRight.png',
-                  width: double.infinity,
-                  fit: BoxFit.fill,
+      body: Column(
+        children: [
+          Stack(
+            children: [
+              Image.asset(
+                'assets/images/PatternTopRight.png',
+                width: double.infinity,
+                fit: BoxFit.fill,
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 25),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const SizedBox(
+                      height: 50,
+                    ),
+                    Text(
+                      'Cart',
+                      style: TextManger.textstyle25Bold
+                          .copyWith(color: theme.hintColor),
+                    ),
+                  ],
                 ),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 25),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      const SizedBox(
-                        height: 50,
+              ),
+              Padding(
+                padding: const EdgeInsets.only(top: 150),
+                child: SizedBox(
+                  height: 500,
+                  child: ListView(
+                    padding: const EdgeInsets.symmetric(horizontal: 20),
+                    physics: const BouncingScrollPhysics(),
+                    scrollDirection: Axis.vertical,
+                    children: const [
+                      CartMenuWidget(
+                        image: 'assets/images/Photo_Soup.png',
                       ),
-                      Text(
-                        'Cart',
-                        style: TextManger.textstyle25Bold
-                            .copyWith(color: theme.hintColor),
+                      SizedBox(
+                        height: 20,
                       ),
+                      CartMenuWidget(image: 'assets/images/Photo_Salad.png'),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      CartMenuWidget(image: 'assets/images/Photo_Shawirma.png'),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      CartMenuWidget(image: 'assets/images/Photo_Veg.png'),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      CartMenuWidget(
+                          image: 'assets/images/Photo_Menu_profile.png'),
                     ],
                   ),
                 ),
-                Padding(
-                  padding: const EdgeInsets.only(top: 150),
-                  child: SizedBox(
-                    height: 500,
-                    child: ListView(
-                      padding: const EdgeInsets.symmetric(horizontal: 20),
-                      physics: const BouncingScrollPhysics(),
-                      scrollDirection: Axis.vertical,
-                      children: const [
-                        CartMenuWidget(
-                          image: 'assets/images/Photo_Soup.png',
-                        ),
-                        SizedBox(
-                          height: 20,
-                        ),
-                        CartMenuWidget(image: 'assets/images/Photo_Salad.png'),
-                        SizedBox(
-                          height: 20,
-                        ),
-                        CartMenuWidget(
-                            image: 'assets/images/Photo_Shawirma.png'),
-                        SizedBox(
-                          height: 20,
-                        ),
-                        CartMenuWidget(image: 'assets/images/Photo_Veg.png'),
-                        SizedBox(
-                          height: 20,
-                        ),
-                        CartMenuWidget(
-                            image: 'assets/images/Photo_Menu_profile.png'),
-                      ],
-                    ),
-                  ),
-                ),
-              ],
-            ),
-            Expanded(
-              child: GestureDetector(
-                onTap: () => _displayButtomSheet(context),
-                child:
-                    const CustomButtonWidget(textButton: r'Go to Checkout $'),
               ),
+            ],
+          ),
+          Expanded(
+            child: GestureDetector(
+              onTap: () => _displayButtomSheet(context),
+              child: const CustomButtonWidget(textButton: r'Go to Checkout $'),
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

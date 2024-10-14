@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:food_ninga/core/utils/widget/custom_button_widget.dart';
 import 'package:food_ninga/features/home/pages/upload_photo_page.dart';
@@ -9,43 +10,46 @@ class PaymentMethodPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setSystemUIOverlayStyle(
+      const SystemUiOverlayStyle(
+        statusBarColor: Colors.transparent,
+      ),
+    );
     return Scaffold(
-      body: SafeArea(
-        child: Column(
-          children: [
-            const TopAppbarPopWidget(
-              titel: 'Payment Method',
-              supTitel:
-                  'This data will be displayed in your account \nprofile for security',
-            ),
-            const SizedBox(
-              height: 47,
-            ),
-            const PaymentsContainer(
-              imagePayment: 'assets/svg/visa.svg',
-            ),
-            const SizedBox(
-              height: 20,
-            ),
-            const PaymentsContainer(
-              imagePayment: 'assets/svg/paypal.svg',
-            ),
-            const SizedBox(
-              height: 20,
-            ),
-            const PaymentsContainer(
-              imagePayment: 'assets/svg/Payoneer.svg',
-            ),
-            const SizedBox(
-              height: 190,
-            ),
-            GestureDetector(
-                onTap: () => Navigator.of(context).push(MaterialPageRoute(
-                      builder: (context) => const UpLoadPhotoPage(),
-                    )),
-                child: const CustomButtonWidget(textButton: 'Next')),
-          ],
-        ),
+      body: Column(
+        children: [
+          const TopAppbarPopWidget(
+            titel: 'Payment Method',
+            supTitel:
+                'This data will be displayed in your account \nprofile for security',
+          ),
+          const SizedBox(
+            height: 47,
+          ),
+          const PaymentsContainer(
+            imagePayment: 'assets/svg/visa.svg',
+          ),
+          const SizedBox(
+            height: 20,
+          ),
+          const PaymentsContainer(
+            imagePayment: 'assets/svg/paypal.svg',
+          ),
+          const SizedBox(
+            height: 20,
+          ),
+          const PaymentsContainer(
+            imagePayment: 'assets/svg/Payoneer.svg',
+          ),
+          const SizedBox(
+            height: 190,
+          ),
+          GestureDetector(
+              onTap: () => Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => const UpLoadPhotoPage(),
+                  )),
+              child: const CustomButtonWidget(textButton: 'Next')),
+        ],
       ),
     );
   }

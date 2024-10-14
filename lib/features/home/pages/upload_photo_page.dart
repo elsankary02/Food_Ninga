@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:food_ninga/core/utils/text_manger.dart';
 import 'package:food_ninga/core/utils/widget/custom_button_widget.dart';
@@ -11,56 +12,57 @@ class UpLoadPhotoPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setSystemUIOverlayStyle(
+      const SystemUiOverlayStyle(statusBarColor: Colors.transparent),
+    );
     return Scaffold(
-      body: SafeArea(
-        child: Column(
-          children: [
-            const TopAppbarPopWidget(
-              titel: 'Upload Your Photo\nProfile',
-              supTitel:
-                  'This data will be displayed in your account \nprofile for security',
-            ),
-            const SizedBox(
-              height: 20,
-            ),
-            GestureDetector(
-              onTap: () => Navigator.of(context).push(
-                MaterialPageRoute(
-                  builder: (context) => const UploadPreviewPage(),
-                ),
-              ),
-              child: const ContainerLoadPhoto(
-                upLoadPhoto: 'assets/svg/Gallery.svg',
-                textStyelPhoto: 'From Gallery',
+      body: Column(
+        children: [
+          const TopAppbarPopWidget(
+            titel: 'Upload Your Photo\nProfile',
+            supTitel:
+                'This data will be displayed in your account \nprofile for security',
+          ),
+          const SizedBox(
+            height: 20,
+          ),
+          GestureDetector(
+            onTap: () => Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (context) => const UploadPreviewPage(),
               ),
             ),
-            const SizedBox(
-              height: 20,
+            child: const ContainerLoadPhoto(
+              upLoadPhoto: 'assets/svg/Gallery.svg',
+              textStyelPhoto: 'From Gallery',
             ),
-            GestureDetector(
-              onTap: () => Navigator.of(context).push(
-                MaterialPageRoute(
-                  builder: (context) => const UploadPreviewPage(),
-                ),
+          ),
+          const SizedBox(
+            height: 20,
+          ),
+          GestureDetector(
+            onTap: () => Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (context) => const UploadPreviewPage(),
               ),
-              child: const ContainerLoadPhoto(
-                upLoadPhoto: 'assets/svg/camera.svg',
-                textStyelPhoto: 'Take Photo',
+            ),
+            child: const ContainerLoadPhoto(
+              upLoadPhoto: 'assets/svg/camera.svg',
+              textStyelPhoto: 'Take Photo',
+            ),
+          ),
+          const SizedBox(
+            height: 190,
+          ),
+          GestureDetector(
+            onTap: () => Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (context) => const SetLocationPage(),
               ),
             ),
-            const SizedBox(
-              height: 190,
-            ),
-            GestureDetector(
-              onTap: () => Navigator.of(context).push(
-                MaterialPageRoute(
-                  builder: (context) => const SetLocationPage(),
-                ),
-              ),
-              child: const CustomButtonWidget(textButton: 'Next'),
-            ),
-          ],
-        ),
+            child: const CustomButtonWidget(textButton: 'Next'),
+          ),
+        ],
       ),
     );
   }

@@ -42,13 +42,12 @@ class _MassageChatWidgetState extends State<MassageChatWidget> {
           const SizedBox(
             width: 15,
           ),
-          Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              SizedBox(
-                width: 250,
-                child: Row(
+          Expanded(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
@@ -62,12 +61,12 @@ class _MassageChatWidgetState extends State<MassageChatWidget> {
                     ),
                   ],
                 ),
-              ),
-              const Text(
-                'Your Order Just Arrived!',
-                style: TextManger.textstyle14Regular,
-              ),
-            ],
+                const Text(
+                  'Your Order Just Arrived!',
+                  style: TextManger.textstyle14Regular,
+                ),
+              ],
+            ),
           ),
         ],
       ),
