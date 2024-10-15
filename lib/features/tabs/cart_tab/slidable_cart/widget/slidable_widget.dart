@@ -97,9 +97,11 @@ class _SlidableWidgetState extends State<SlidableWidget> {
                                 ),
                                 QuantityCounterWidget(
                                   onValueChanged: (value) {
-                                    setState(() {
-                                      quantity = value;
-                                    });
+                                    setState(
+                                      () {
+                                        quantity = value;
+                                      },
+                                    );
                                   },
                                 ),
                               ],
@@ -122,6 +124,8 @@ class _SlidableWidgetState extends State<SlidableWidget> {
     );
   }
 
+  int get totalPrice => 35 * quantity;
+
   void removeCard(int index, Action action) {
     // ignore: unused_local_variable
     final users = addCart[index];
@@ -132,6 +136,4 @@ class _SlidableWidgetState extends State<SlidableWidget> {
       },
     );
   }
-
-  int get totalPrice => 35 * quantity;
 }
