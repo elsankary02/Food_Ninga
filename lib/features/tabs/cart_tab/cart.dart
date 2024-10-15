@@ -3,12 +3,17 @@ import 'package:flutter/services.dart';
 import 'package:food_ninga/core/utils/color_manger.dart';
 import 'package:food_ninga/core/utils/text_manger.dart';
 import 'package:food_ninga/core/utils/widget/custom_button_widget.dart';
-import 'package:food_ninga/features/tabs/cart_tab/screens/widgets/cart_menu_widget.dart';
 import 'package:food_ninga/features/tabs/cart_tab/screens/widgets/checkout_order_widget.dart';
+import 'package:food_ninga/features/tabs/cart_tab/slidable_cart/widget/slidable_widget.dart';
 
-class Cart extends StatelessWidget {
+class Cart extends StatefulWidget {
   const Cart({super.key});
 
+  @override
+  State<Cart> createState() => _CartState();
+}
+
+class _CartState extends State<Cart> {
   @override
   Widget build(BuildContext context) {
     SystemChrome.setSystemUIOverlayStyle(
@@ -44,39 +49,7 @@ class Cart extends StatelessWidget {
                   ],
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.only(top: 150),
-                child: SizedBox(
-                  height: 500,
-                  child: ListView(
-                    padding: const EdgeInsets.symmetric(horizontal: 20),
-                    physics: const BouncingScrollPhysics(),
-                    scrollDirection: Axis.vertical,
-                    children: const [
-                      CartMenuWidget(
-                        image: 'assets/images/Photo_Soup.png',
-                      ),
-                      SizedBox(
-                        height: 20,
-                      ),
-                      CartMenuWidget(image: 'assets/images/Photo_Salad.png'),
-                      SizedBox(
-                        height: 20,
-                      ),
-                      CartMenuWidget(image: 'assets/images/Photo_Shawirma.png'),
-                      SizedBox(
-                        height: 20,
-                      ),
-                      CartMenuWidget(image: 'assets/images/Photo_Veg.png'),
-                      SizedBox(
-                        height: 20,
-                      ),
-                      CartMenuWidget(
-                          image: 'assets/images/Photo_Menu_profile.png'),
-                    ],
-                  ),
-                ),
-              ),
+              const SlidableWidget(),
             ],
           ),
           Expanded(

@@ -136,12 +136,12 @@ class _ChangeThemeState extends State<ChangeTheme> {
 
     return GestureDetector(
       onTap: () {
-        BlocProvider.of<ChangeThemeCubit>(context)
-            .setChangeTheme(value: themeChange);
-
         setState(() {
           themeChange = !themeChange;
         });
+
+        BlocProvider.of<ChangeThemeCubit>(context)
+            .setChangeTheme(value: themeChange);
       },
       child: Container(
         height: 50,
@@ -152,8 +152,8 @@ class _ChangeThemeState extends State<ChangeTheme> {
         ),
         child: Center(
           child: Icon(
-            themeChange ? Icons.brightness_high : Icons.nightlight,
-            color: themeChange ? Colors.amber[700] : Colors.white,
+            themeChange ? Icons.nightlight : Icons.brightness_high,
+            color: themeChange ? Colors.white : Colors.amber[700],
           ),
         ),
       ),
